@@ -1,0 +1,28 @@
+package main
+
+import (  
+    "fmt"
+)
+
+type Employee struct {  
+    firstName string
+    lastName  string
+    age       int
+    salary    int
+}
+
+func main() {
+
+    
+    emp1 := Employee{
+        firstName: "lakshmi",
+        age:       25,
+        salary:    500,
+        lastName:  "gouni",
+    }
+
+    
+    emp2 := Employee{"pavan", "gouni", 29, 800}
+
+    fmt.Println("Employee 1", emp1)
+    fmt.Println("Employee 2", emp2)
